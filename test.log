@@ -1,0 +1,67 @@
+Command line: transpeptidation.py --fasta test_peptide.fa --sites R K --max_missed 2 --log test.log --max_fragments 55 --out testout.txt
+
+Peptide name: testprot1 
+Peptide sequence: RATGRAAATHNMIPPPKUUREFGVGGGRGKGGHHKJHJHJYGUYGYUGUGGJYRHGHGGHGR
+Possible cleavage sites: [1, 5, 17, 20, 28, 30, 35, 54]
+Number of missed cleavage events: 0
+testprot1_1N
+R
+testprot1_1_5
+ATGR
+testprot1_5_17
+AAATHNMIPPPK
+testprot1_17_20
+UUR
+testprot1_20_28
+EFGVGGGR
+testprot1_28_30
+GK
+testprot1_30_35
+GGHHK
+testprot1_35_54
+JHJHJYGUYGYUGUGGJYR
+testprot1_54C
+HGHGGHGR
+Number of missed cleavage events: 1
+testprot1_5N
+RATGR
+testprot1_1_17
+ATGRAAATHNMIPPPK
+testprot1_5_20
+AAATHNMIPPPKUUR
+testprot1_17_28
+UUREFGVGGGR
+testprot1_20_30
+EFGVGGGRGK
+testprot1_28_35
+GKGGHHK
+testprot1_30_54
+GGHHKJHJHJYGUYGYUGUGGJYR
+testprot1_35C
+JHJHJYGUYGYUGUGGJYRHGHGGHGR
+Number of missed cleavage events: 2
+testprot1_17N
+RATGRAAATHNMIPPPK
+testprot1_1_20
+ATGRAAATHNMIPPPKUUR
+testprot1_5_28
+AAATHNMIPPPKUUREFGVGGGR
+testprot1_17_30
+UUREFGVGGGRGK
+testprot1_20_35
+EFGVGGGRGKGGHHK
+testprot1_28_54
+GKGGHHKJHJHJYGUYGYUGUGGJYR
+testprot1_30C
+GGHHKJHJHJYGUYGYUGUGGJYRHGHGGHGR
+
+Peptide name: testprot2 
+Peptide sequence: ABCDEFGHIJKLMNOPQ
+Possible cleavage sites: [11]
+Number of missed cleavage events: 0
+testprot2_11N
+ABCDEFGHIJK
+testprot2_11C
+LMNOPQ
+testprot2
+ABCDEFGHIJKLMNOPQ
